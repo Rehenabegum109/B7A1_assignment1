@@ -4,14 +4,14 @@ const filterEvenNumbers =(numbers : number[]) : number[] =>{
     return numbers.filter((num) => num %2 === 0)
     
 };
-console.log(filterEvenNumbers ([1,2,3,4,5,6]));
+// console.log(filterEvenNumbers ([1,2,3,4,5,6]));
 
 // Problem 2
 const reverseString = (text: string): string => {
   return text.split("").reverse().join("");
 };
 
-console.log(reverseString("typescript"));
+// console.log(reverseString("typescript"));
 
 // Problem 3
 type StringOrNumber = string | number;
@@ -24,8 +24,8 @@ const checkType =(value :StringOrNumber) :string => {
     }
 };
 
-console.log(checkType("Hello"));
-console.log(checkType(42));
+// console.log(checkType("Hello"));
+// console.log(checkType(42));
 
 // problem 4
 
@@ -37,7 +37,7 @@ const getProperty = <T, K extends keyof T>(
 }; 
 const user = { id: 1, name: "John Doe", age: 21 };
 
-console.log(getProperty(user, "name"));
+// console.log(getProperty(user, "name"));
 
 // Problem 5
 
@@ -59,7 +59,7 @@ const myBook = {
   publishedYear: 2024,
 };
 
-console.log(toggleReadStatus(myBook));
+// console.log(toggleReadStatus(myBook));
 
 // Problem 6
 
@@ -86,11 +86,11 @@ class Student extends Person {
 };
 const student = new Student("Alice", 20, "A");
 
-console.log(student.getDetails());
+// console.log(student.getDetails());
 
 // Problem 7
 
 const getIntersection = (arr1: number[], arr2: number[]): number[] => {
   return arr1.filter((num) => arr2.includes(num));
 };
-console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
+// console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
